@@ -1,0 +1,55 @@
+# Editor and OS files
+*~
+.#*
+.DS_Store
+
+# Native build outputs
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+a.out
+core
+core.*
+
+# misc: built tools
+/sim/misc/yas
+/sim/misc/yis
+/sim/misc/hcl2c
+/sim/misc/hcl2v
+/sim/misc/hcl2u
+/sim/misc/mux4
+
+# pipe: simulator and generated drivers/control sources
+/sim/pipe/psim
+/sim/pipe/pipe-*.c
+/sim/pipe/sdriver.*
+/sim/pipe/ldriver.*
+/sim/pipe/bdriver*.ys
+/sim/pipe/bdriver*.yo
+/sim/pipe/cdriver*.ys
+/sim/pipe/cdriver*.yo
+/sim/pipe/cdriver*.pipe
+/sim/pipe/cdriver*.yis
+
+# seq: simulators and generated control sources
+/sim/seq/ssim
+/sim/seq/ssim+
+/sim/seq/seq*-*.c
+
+# y86-code: assembled programs and simulator traces
+/sim/y86-code/*.yo
+/sim/y86-code/*.yis
+/sim/y86-code/*.pipe
+/sim/y86-code/*.seq
+/sim/y86-code/*.seq+
+/sim/y86-code/*.txt
+
+# ptest: generated regression cases
+/sim/ptest/*.ys
+/sim/ptest/*.yo
+/sim/ptest/psim-*/
+/sim/ptest/ssim-*/
+/sim/ptest/ssim+-*/
